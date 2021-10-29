@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: #fafafa;
+  z-index: 3;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: calc(-100% + 165px);
+  left: 0;
+  width: calc(100% - 50px);
+  background: bottom/100% no-repeat url(../images/bg-pattern-mobile-nav.svg), #2b272f;
+  padding: 30px 25px 280px;
+  z-index: 2;
+}
+
+header nav .nav-link {
+  color: #fafafa;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  margin: 0 0 15px;
+}
+
+header nav .nav-link[href="#plans"] {
+  border: 2px solid #fafafa;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header nav .nav-link[href="#plans"]:hover {
+  background: #fafafa;
+  color: #2b272f;
+}
+
+header .nav-toggle, header .nav-open, header .nav-close {
+  width: 32px;
+  height: 32px;
+}
+
+header .nav-toggle img, header .nav-open img, header .nav-close img {
+  pointer-events: none;
+}
+
+main .intro-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 450px;
+  vertical-align: middle;
+}
+
+main a {
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main a:hover {
+  background: #fafafa;
+  color: #2b272f;
+}
+
+main .intro-header {
+  background: #2d2640;
+  padding: 90px 25px 100px;
+  position: relative;
+}
+
+main .intro-header .divider {
+  display: none;
+}
+
+main .intro-header h1, main .intro-header p, main .intro-header a {
+  z-index: 1;
+}
+
+main .intro-header h1, main .intro-header p {
+  text-align: center;
+  color: #fafafa;
+}
+
+main .intro-header h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 46px;
+  margin-bottom: 15px;
+}
+
+main .intro-header p {
+  line-height: 1.6em;
+  margin: 0 5px 30px;
+  opacity: .75;
+}
+
+main .intro-header .intro-header-left, main .intro-header .intro-header-right {
+  position: absolute;
+}
+
+main .intro-header .intro-header-left {
+  top: 0;
+  left: 0;
+}
+
+main .intro-header .intro-header-right {
+  bottom: -175px;
+  right: 0;
+}
+
+main .intro-details {
+  padding: 140px 25px 80px;
+}
+
+main .intro-details .divider {
+  height: 2px;
+  width: 140px;
+  background: #2b272f;
+  margin: 0 0 40px;
+  opacity: 0.25;
+}
+
+main .intro-details h3, main .intro-details h2, main .intro-details p {
+  text-align: center;
+}
+
+main .intro-details h2, main .intro-details h3 {
+  font-family: "DM Serif Display", serif;
+  color: #2b272f;
+}
+
+main .intro-details h2 {
+  font-size: 46px;
+  margin: 0 0 75px;
+}
+
+main .intro-details img {
+  margin: 0 0 40px;
+}
+
+main .intro-details h3 {
+  font-size: 28px;
+  margin: 0 0 15px;
+}
+
+main .intro-details p {
+  line-height: 1.6em;
+  margin: 0 0 60px;
+  opacity: .75;
+}
+
+main .intro-work {
+  background: right top/155px no-repeat url(../images/bg-pattern-how-we-work-mobile.svg), #2d2640;
+  margin: 0 25px 120px;
+  padding: 60px 30px;
+}
+
+main .intro-work h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 38px;
+  color: #fafafa;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+footer {
+  background: no-repeat url(../images/bg-pattern-footer-mobile.svg), #fafafa;
+  padding: 90px 25px 0;
+}
+
+footer .footer-top {
+  width: 100%;
+}
+
+footer .social-media {
+  margin: 30px 0;
+}
+
+footer .social-media a {
+  margin: 0 5px;
+}
+
+footer .divider {
+  height: 1px;
+  width: 100%;
+  background: #2b272f;
+  opacity: 0.25;
+}
+
+footer section .footer-section-title, footer section .footer-link {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer section .footer-section-title {
+  color: #837d87;
+  margin: 30px 0;
+}
+
+footer section .footer-link {
+  color: #2d2640;
+  margin: 0 0 15px;
+}
+
+footer .attribution {
+  font-size: 12px;
+  text-align: center;
+  margin: 40px 0 25px;
+  color: #2b272f;
+}
+
+footer .attribution a {
+  color: #2d2640;
+}
+
+.intro-header, .intro-details, .intro-work, .intro-details-body, .intro-details-content, footer, .footer-top, section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    padding: 25px 150px;
+  }
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+    padding: 0;
+    background: transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+  header nav .nav-link {
+    margin: 0 0 0 25px;
+    padding: 0;
+    color: #837d87;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  header nav .nav-link[href="#plans"] {
+    padding: 13px 25px;
+    color: #2b272f;
+    border-color: #2b272f;
+  }
+  header nav .nav-link[href="#plans"]:hover {
+    background-color: #2b272f;
+    color: #fafafa;
+  }
+  header .nav-toggle {
+    display: none;
+  }
+  main {
+    position: relative;
+  }
+  main .intro-img {
+    position: absolute;
+    top: 100px;
+    right: 170px;
+    z-index: 1;
+    -o-object-fit: none;
+       object-fit: none;
+    content: url("../images/image-intro-desktop.jpg");
+    width: auto;
+    height: auto;
+  }
+  main .intro-header {
+    padding: 100px 150px 120px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .intro-header .intro-header-left {
+    content: url("../images/bg-pattern-intro-left-desktop.svg");
+    top: unset;
+    bottom: -335px;
+  }
+  main .intro-header .intro-header-right {
+    content: url("../images/bg-pattern-intro-right-desktop.svg");
+    bottom: unset;
+    top: -80px;
+    z-index: 1;
+  }
+  main .intro-header .divider {
+    display: block;
+    height: 1px;
+    width: 140px;
+    background: #fafafa;
+    margin: 0 0 60px;
+  }
+  main .intro-header h1, main .intro-header p {
+    text-align: left;
+    width: calc(100% - 540px - 50px);
+    max-width: 550px;
+  }
+  main .intro-header h1 {
+    font-size: 75px;
+  }
+  main .intro-header p {
+    margin: 0 0 30px;
+  }
+  main .intro-header a {
+    font-size: 13px;
+    padding: 13px 25px;
+  }
+  main .intro-details {
+    padding: 300px 150px 80px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .intro-details .divider {
+    width: 160px;
+    margin: 0 0 60px;
+  }
+  main .intro-details .intro-details-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  main .intro-details .intro-details-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .intro-details h3, main .intro-details h2, main .intro-details p {
+    text-align: left;
+  }
+  main .intro-details h2 {
+    font-size: 75px;
+    margin: 0 0 100px;
+  }
+  main .intro-work {
+    background: right top/auto 100% no-repeat url(../images/bg-pattern-how-we-work-desktop.svg), #2d2640;
+    margin: 0 150px 150px;
+    padding: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .intro-work h2 {
+    font-size: 55px;
+    margin: 0;
+    max-width: 480px;
+    text-align: left;
+  }
+  footer {
+    padding: 60px 150px 0;
+    background: no-repeat url(../images/bg-pattern-footer-desktop.svg), #fafafa;
+  }
+  footer .footer-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-top .social-media {
+    margin: 0;
+  }
+  footer .divider {
+    margin: 35px 0 20px;
+  }
+  footer .footer-bottom {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  footer .footer-bottom section {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .footer-bottom section h4, footer .footer-bottom section a {
+    font-size: 14px;
+  }
+  footer .attribution {
+    margin: 25px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
