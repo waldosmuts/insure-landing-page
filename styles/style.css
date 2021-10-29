@@ -240,6 +240,7 @@ main .intro-details p {
   line-height: 1.6em;
   margin: 0 0 60px;
   opacity: .75;
+  max-width: 380px;
 }
 
 main .intro-work {
@@ -425,6 +426,7 @@ footer .attribution a {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
   main .intro-details .intro-details-content {
     -webkit-box-align: start;
@@ -437,6 +439,10 @@ footer .attribution a {
   main .intro-details h2 {
     font-size: 75px;
     margin: 0 0 100px;
+  }
+  main .intro-details p {
+    max-width: 350px;
+    margin: 0 25px 60px 0;
   }
   main .intro-work {
     background: right top/auto 100% no-repeat url(../images/bg-pattern-how-we-work-desktop.svg), #2d2640;

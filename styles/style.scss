@@ -146,6 +146,7 @@ main {
             line-height: 1.6em;
             margin: 0 0 60px;
             opacity: .75;
+            max-width: 380px;
         }
     }
     .intro-work {
@@ -306,6 +307,7 @@ footer {
             .intro-details-body {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                width: 100%;
             }
             .intro-details-content {
                 align-items: flex-start;
@@ -316,6 +318,10 @@ footer {
             h2 {
                 font-size: 75px;
                 margin: 0 0 100px;
+            }
+            p {
+                max-width: 350px;
+                margin: 0 25px 60px 0;
             }
         }
         .intro-work {
